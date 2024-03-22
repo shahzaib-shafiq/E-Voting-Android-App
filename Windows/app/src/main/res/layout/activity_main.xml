@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#344e41"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgvoterlogo"
+        android:layout_width="406dp"
+        android:layout_height="414dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/voter_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgapplogo"
+        tools:srcCompat="@drawable/voter_logo" />
+
+    <ImageView
+        android:id="@+id/imgapplogo"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/applogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/applogo" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnvotenow"
+        android:layout_width="351dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/green_col"
+        android:fontFamily="@font/archivo_black"
+        android:onClick="MainPage"
+        android:text="Vote Now!"
+        android:textAllCaps="true"
+        android:textColor="#588157"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvoterlogo" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
